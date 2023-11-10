@@ -4,6 +4,27 @@ amarillo #FFCC00
 naranja #E8940C
 rojo #FF5D00 */
 
+html {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+  
+  }
+
+  #logo {
+    height: 5vh;
+    width: auto;
+    max-height: 10vw;
+    margin: 2.5vh;
+  }
+
+  #sergiogalarza{
+    font-size: 3vh;
+    margin:auto;
+  }
+
+  #exodust{
+    font-size: 3vh;
+  }
 #winImg{
     width: 0%;
     position: fixed;
@@ -111,7 +132,7 @@ figure {
     justify-content: space-between;
     justify-self: center;
     align-self: center;
-    align-items: center;
+   
     height: 90px;
     padding: 5px;
     /* width: 1200px; */
@@ -240,7 +261,6 @@ h3,
 h4,
 h5,
 h6{
-    font-family: 'Fjalla One';
     font-weight: normal;
     /*font-style: italic;*/
     margin: 3px;
@@ -293,6 +313,10 @@ h2 {
     /* align-items: center; */
     justify-content: space-between;
     padding: 10px;
+}
+
+.footer > .container{
+    z-index: 2;
 }
 
 .footer img {

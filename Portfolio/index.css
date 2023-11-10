@@ -71,6 +71,9 @@ background: linear-gradient(90deg, rgba(48,105,152,1) 0%, rgba(182,222,255,1) 40
   max-height: 10vw;
   margin: 2.5vh;
 }
+#sergiogalarza{
+  font-size: 3vh;
+}
 
 .container, .squares > div {
   background: var(--mylightblack);

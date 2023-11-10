@@ -18,6 +18,10 @@ html {
 
 }
 
+#sergiogalarza{
+  font-size: 3vh;
+}
+
   /*COLORS!*/
 body {
   background-color: var(--myblack); color: var(--mygrey)

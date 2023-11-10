@@ -155,40 +155,40 @@ cargarTodo ()
 
 function cargarTodo () {
   fondo.imagen = new Image();
-  fondo.imagen.src = "images/i6_tile.png";
+  fondo.imagen.src="../assets/BearingChickImages/i6_tile.png";
   fondo.imagen.addEventListener("load", cFox);
   console.log("fondi");
 }
 
 function cFox() {
   fox.imagen = new Image();
-  fox.imagen.src = "images/i7_fox.png";
+  fox.imagen.src="../assets/BearingChickImages/i7_fox.png";
   fox.imagen.addEventListener("load", cNido);
   console.log("foxi");
 }
 function cNido () {
   nido.imagen = new Image();
-  nido.imagen.src = "images/i8_nido.png";
+  nido.imagen.src="../assets/BearingChickImages/i8_nido.png";
   nido.imagen.addEventListener("load", cEgg);
   console.log("nidi");
 }
 function cEgg () {
   egg.imagen = new Image();
   if (win==0)
-    egg.imagen.src = "images/i9_egg.png";
+    egg.imagen.src="../assets/BearingChickImages/i9_egg.png";
   else
     if (win==2)
-      egg.imagen.src="images/i9_egg_loss.png";
+      egg.imagen.src="../assets/BearingChickImages/i9_egg_loss.png";
     else
-      egg.imagen.src="images/i9_egg_win.png";
+      egg.imagen.src="../assets/BearingChickImages/i9_egg_win.png";
   egg.imagen.addEventListener("load", cKeshinLeft);
   console.log("cargarEggi");
 }
 function cKeshinLeft () {
   keshin.imagen = new Image();
-  keshin.imagen.src = "images/i17_kleft.png";
+  keshin.imagen.src="../assets/BearingChickImages/i17_kleft.png";
   if (win==2)
-    keshin.imagen.src= "images/i11_keshin_sad.png";
+    keshin.imagen.src="../assets/BearingChickImages/i11_keshin_sad.png";
   keshin.imagen.addEventListener("load", dibujarStart);
   console.log("cargarKeshini");
 }
@@ -239,11 +239,11 @@ function canAttack()
     if(vertical<=50&&horizontal<=50){
       target=1;
       //cambiar de color el boton
-      targetButton.src="images/i5_center_red.png";
+      targetButton.src="../assets/BearingChickImages/i5_center_red.png";
     }
   }
   if (target==0)
-     targetButton.src="images/i5_center.png";
+     targetButton.src="../assets/BearingChickImages/i5_center.png";
     console.log(target);
 }
 function Attack()
@@ -263,7 +263,7 @@ function Attack()
       {
         eval("posFox"+v2+"=[1000,1000];");
 
-        // targetButton.src="images/i5_center_red.png";
+        // targetButton.src="../assets/BearingChickImages/i5_center_red.png";
       }
       
     }
@@ -326,9 +326,9 @@ function moveKeshinUp()
 function moveKeshinLeft()
 {
   if (win==2)
-    keshin.imagen.src = "images/i11_keshin_sad.png";
+    keshin.imagen.src="../assets/BearingChickImages/i11_keshin_sad.png";
   else
-    keshin.imagen.src = "images/i17_kleft.png";
+    keshin.imagen.src="../assets/BearingChickImages/i17_kleft.png";
   if (keshinX>6)
   {
   keshinX-= 50;
@@ -338,9 +338,9 @@ function moveKeshinLeft()
 function moveKeshinRight()
 {
   if (win==2)
-    keshin.imagen.src= "images/i19_keshin_sad_right.png"
+    keshin.imagen.src="../assets/BearingChickImages/i19_keshin_sad_right.png"
   else 
-    keshin.imagen.src= "images/i18_kright.png" 
+    keshin.imagen.src="../assets/BearingChickImages/i18_kright.png" 
   if (keshinX<456)
   {
   keshinX+= 50;
