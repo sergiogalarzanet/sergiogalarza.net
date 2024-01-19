@@ -28,8 +28,8 @@
         </header> 
         
         <div class="book">
-            
-            <p>Mientras se despierta en la caída del nido, Keshin se ve acechado por un oso a punto de comérselo, pero logra espantarlo para vivir un día más. El ¿ave? con su abundante plumaje amarillo y sus recuerdos confusos se halla junto a un huevo que sigue prácticamente intacto. Sabe que no es suyo, pero al no recordar muy bien de dónde llegó, procede a moverlo al nido, o a lo que quedó de este, y calentarlo mientras llegan los padres. O eso cree.</p>
+            <h2>Hola</h2>
+            <p class="typewriter">Mientras se despierta en la caída del nido, Keshin se ve acechado por un oso a punto de comérselo, pero logra espantarlo para vivir un día más. El ¿ave? con su abundante plumaje amarillo y sus recuerdos confusos se halla junto a un huevo que sigue prácticamente intacto. Sabe que no es suyo, pero al no recordar muy bien de dónde llegó, procede a moverlo al nido, o a lo que quedó de este, y calentarlo mientras llegan los padres. O eso cree.</p>
             <p>No recuerda mucho y ¡no encuentra sus alas! y ni siquiera sabe si preocuparse o no, pues no tiene ni idea de quién.</p>
             <p>No pasa suficiente tiempo para alcanzar a preocuparse más hasta que siente lo están acechando. <i>-sí. Keshin no es pollo cualquiera-</i>. Con toda ferocidad y sin esperar tener una batalla cerca al huevo que es lo único que tiene, parte a la pelea.</p>
         </div>
@@ -38,13 +38,45 @@
         <footer class="footer">
             <div class="container">                
                 <div>
-                    <a class="righ btn btn-dark btn-lg" href="../Exodust/index.html">BACK</a>
+                    <a class="righ btn btn-dark btn-lg" href="../Exodust/index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                      </svg></a>
                 </div>
                 <div id="contact_right">
-                    <a class="righ btn btn-dark btn-lg" href="./index.html">NEXT (10 s)</a>
+                    <a class="righ btn btn-dark btn-lg" href="./index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                      </svg></a>
                 </div>
             </div>
         </footer>
     </body>
     <script src="script.js"></script>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+
+
+        var text = $('.typewriter').text();
+
+        var length = text.length;
+        var timeOut;
+        var character = 0;
+
+        (function typeWriter() { 
+            timeOut = setTimeout(function() {
+                character++;
+                var type = text.substring(0, character);
+                $('.typewriter').text(type);
+                typeWriter();
+                
+                if (character == length) {
+                    clearTimeout(timeOut);
+                }
+                
+            }, 20);
+        }());
+
+
+				
+    </script>
 </html>
